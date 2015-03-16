@@ -6,9 +6,13 @@ A clean and simple flat designed Notification Singleton used for good UX with re
 To queue up a message notification, include DVNotification.h, (optionally customise the color/label), and call 'showNotificationWithText:'
 
 e.g.:
+
 [DVNotification setNotificationBackgroundColour: [UIColor redColor]];
+
 [DVNotification showNotificationWithText: @"Message 1"];
+
 [DVNotification showNotificationWithText: @"Message 2"];
+
 [DVNotification showNotificationWithText: @"Message 3"];
 
 The messages will always be displayed on top of any current view, tapping anywhere on the screen will dismiss it.
