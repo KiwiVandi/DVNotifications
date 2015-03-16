@@ -17,6 +17,10 @@ e.g.:
 
 The messages will always be displayed on top of any current view, tapping anywhere on the screen will dismiss it.
 
+[![](https://www.dropbox.com/s/ef7qelp84kxco1b/IMG_1550.PNG)](https://www.dropbox.com/s/ef7qelp84kxco1b/IMG_1550.PNG)
+[![](https://www.dropbox.com/s/pruvew8wp143qki/IMG_1551.PNG)](https://www.dropbox.com/s/pruvew8wp143qki/IMG_1551.PNG)
+
+
 TODO:
 - Add timed dismissal.
 - Turn this into a Cocoa Pod.
