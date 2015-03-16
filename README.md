@@ -1,7 +1,7 @@
 DVNotifications
 ---
 
-A clean and simple flat designed Notification Singleton used for good UX with respect to onboarding users to your iOS application or for your next version of your app. (Similar to Pinterests onboarding Notifications).
+A clean and simple flat designed Notification Singleton used for good UX with respect to onboarding users to your iOS application or for your next version of your app. (Similar to Pinterests onboarding Notifications). Used for onboarding users on the Keynected.com app.
 
 To queue up a message notification, include DVNotification.h, (optionally customise the color/label), and call 'showNotificationWithText:'
 
