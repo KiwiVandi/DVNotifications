@@ -17,8 +17,8 @@ e.g.:
 
 The messages will always be displayed on top of any current view, tapping anywhere on the screen will dismiss it.
 
-[![](http://s14.postimg.org/40awaskoh/IMG_1550.png)](http://s14.postimg.org/40awaskoh/IMG_1550.png)
-[![](http://s13.postimg.org/v8gs4rt4n/IMG_1551.png)](http://s13.postimg.org/v8gs4rt4n/IMG_1551.png)
+[![](http://s3.postimg.org/nwxv74r03/IMG_1550.png)](http://s3.postimg.org/nwxv74r03/IMG_1550.png)
+[![](http://s11.postimg.org/6m2vopwdf/IMG_1551.png)](http://s11.postimg.org/6m2vopwdf/IMG_1551.png)
 
 
 TODO:
