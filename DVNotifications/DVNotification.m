@@ -39,13 +39,13 @@ static DVNotification *_instance = nil;
 	
 	if (self){
 		_displayTime = DEFAULT_DISPLAY_TIME;
-		self.backgroundColor = [UIColor blackColor];
 		CGRect windowFrame = [[[UIApplication sharedApplication] delegate] window].frame;
 		
 		_hiddenFrame = CGRectMake(0, windowFrame.size.height, windowFrame.size.width, windowFrame.size.height);
-		_visibleFrame = CGRectMake(0, windowFrame.size.height - self.frame.size.height, windowFrame.size.width, windowFrame.size.height);
+		_visibleFrame = CGRectMake(0, 0, windowFrame.size.width, windowFrame.size.height);
 		self.frame = _hiddenFrame;
 	}
+	
 	return self;
 }
 
@@ -77,9 +77,10 @@ static DVNotification *_instance = nil;
 							 animations:^{
 								 self.frame = _visibleFrame;
 							 } completion:^(BOOL finished) {
-								 
-								 if (self.notificationsQueue.count > 0){
-									 [self.notificationsQueue removeObjectAtIndex:0];
+								 if (finished){
+									 if (self.notificationsQueue.count > 0){
+										 [self.notificationsQueue removeObjectAtIndex:0];
+									 }
 								 }
 							 }];
 		}
@@ -92,8 +93,8 @@ static DVNotification *_instance = nil;
 						 animations:^{
 							 self.frame = _hiddenFrame;
 						 } completion:^(BOOL finished) {
+							 _isDisplayingNotification = NO;
 							 if (self.notificationsQueue.count > 0){
-								 _isDisplayingNotification = NO;
 								 [self showNotificationAnimated: YES];
 							 }else{
 								 [self removeFromSuperview];
